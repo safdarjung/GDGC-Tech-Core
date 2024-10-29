@@ -1,0 +1,29 @@
+//logical operators in java
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input two boolean values
+        System.out.print("Enter the first boolean value (true/false): ");
+        boolean value1 = sc.nextBoolean();
+
+        System.out.print("Enter the second boolean value (true/false): ");
+        boolean value2 = sc.nextBoolean();
+
+        // Logical AND
+        boolean andResult = value1 && value2;
+        System.out.println("Result of AND operation (value1 && value2): " + andResult);
+
+        // Logical OR
+        boolean orResult = value1 || value2;
+        System.out.println("Result of OR operation (value1 || value2): " + orResult);
+
+        // Logical NOT
+        boolean notValue1 = !value1;
+        boolean notValue2 = !value2;
+        System.out.println("Result of NOT operation on value1 (!value1): " + notValue1);
+        System.out.println("Result of NOT operation on value2 (!value2): " + notValue2);
+    }
+}
